@@ -6,8 +6,8 @@ from tut8.myapp.student import Student
 
 
 @pytest.fixture
-def dummy_student(request):
-    return Student("nikhil", datetime(2000, 1, 1), "coe", request.param)
+def dummy_student():
+    return Student("nikhil", datetime(2000, 1, 1), "coe", 21)
 
 
 @pytest.fixture

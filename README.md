@@ -84,3 +84,15 @@
 - References:
   - https://docs.python.org/3/library/unittest.mock.html
 
+
+## 11. Tips
+- see print msg:
+  - `pytest -s -vv tut2/tests/test_sample.py`
+
+- selectively run a test:
+  - to test all
+    `pytest tut1/tests/test_sample.py`
+  - to test a specific function
+    `pytest tut1/tests/test_sample.py::test_add_num`
+  - to test a specific class method:
+    `pytest tut1/tests/test_sample.py::TestSample::test_add_num1`

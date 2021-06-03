@@ -23,8 +23,8 @@ def test_student_is_eligible_for_degree(make_dummy_student, credits, expected):
     assert is_eligible_for_degree(make_dummy_student("sam", credits)) is expected
 
 
-@pytest.mark.parametrize("dummy_student,expected", [(19, False), (21, True)],
-                         indirect=["dummy_student"],
-                         ids=["ineligible", "eligible"])
-def test_student_is_eligible_for_degree(dummy_student, expected):
-    assert is_eligible_for_degree(dummy_student) is expected
+# @pytest.mark.parametrize("dummy_student,expected", [(19, False), (21, True)],
+#                          indirect=["dummy_student"],
+#                          ids=["ineligible", "eligible"])
+# def test_student_is_eligible_for_degree(dummy_student, expected):
+#     assert is_eligible_for_degree(dummy_student) is expected

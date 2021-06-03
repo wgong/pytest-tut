@@ -4,7 +4,7 @@ from tut2.myapp.sample import validate_age
 
 
 def test_validate_age_valid_age():
-    validate_age(10)
+    assert validate_age(10)
 
 
 def test_validate_age_invalid_age():
