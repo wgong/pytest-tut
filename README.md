@@ -86,6 +86,8 @@
 
 
 ## 11. Tips
+- Mock an item where it is used, not where it came from.
+
 - see print msg:
   - `pytest -s -vv tut2/tests/test_sample.py`
 
@@ -96,3 +98,4 @@
     `pytest tut1/tests/test_sample.py::test_add_num`
   - to test a specific class method:
     `pytest tut1/tests/test_sample.py::TestSample::test_add_num1`
+
